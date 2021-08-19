@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:calc"
+             x:Class="calc.QuestionPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Grid x:Name="grdMain" Margin="10"  BackgroundColor="White"
+                  HorizontalOptions="Center" VerticalOptions="Center"
+                  WidthRequest="400" HeightRequest="700"
+                  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image x:Name="imgQBack" Source="haikei.png" Aspect="AspectFill" Grid.Row="0" Grid.Column="0" Grid.RowSpan="7" Grid.ColumnSpan="21"/>
+
+                <!--<Image x:Name="imgQ1Back" BackgroundColor="SkyBlue" Grid.Row="0" Grid.Column="0" Grid.RowSpan="7" Grid.ColumnSpan="8"/>-->
+                <Label x:Name="lblQuestion1" Text="1" FontSize="60" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="10" Grid.RowSpan="5"
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                <Image x:Name="imgQ1_1" Source="img.png" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgQ1_2" Source="img.png" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgQ1_3" Source="img.png" Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgQ1_4" Source="img.png" Grid.Row="5" Grid.Column="6" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgQ1_5" Source="img.png" Grid.Row="5" Grid.Column="8" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgQ1_6" Source="img.png" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgQ1_7" Source="img.png" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgQ1_8" Source="img.png" Grid.Row="6" Grid.Column="4" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgQ1_9" Source="img.png" Grid.Row="6" Grid.Column="6" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgQ1_10" Source="img.png" Grid.Row="6" Grid.Column="8" Grid.ColumnSpan="2"/>
+
+                <Label x:Name="lblSymbol" Text="+" FontSize="60" Grid.Row="0" Grid.Column="9" Grid.ColumnSpan="3" Grid.RowSpan="5"
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+                <!--<Image x:Name="imgQ2Back" BackgroundColor="SkyBlue" Grid.Row="0" Grid.Column="12" Grid.RowSpan="6" Grid.ColumnSpan="8"/>-->
+                <Label x:Name="lblQuestion2" Text="2" FontSize="60" Grid.Row="0" Grid.Column="11" Grid.ColumnSpan="10" Grid.RowSpan="5"
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+                <Image x:Name="imgQ2_1" Source="img.png" Grid.Row="5" Grid.Column="11" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgQ2_2" Source="img.png" Grid.Row="5" Grid.Column="13" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgQ2_3" Source="img.png" Grid.Row="5" Grid.Column="15" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgQ2_4" Source="img.png" Grid.Row="5" Grid.Column="17" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgQ2_5" Source="img.png" Grid.Row="5" Grid.Column="19" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgQ2_6" Source="img.png" Grid.Row="6" Grid.Column="11" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgQ2_7" Source="img.png" Grid.Row="6" Grid.Column="13" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgQ2_8" Source="img.png" Grid.Row="6" Grid.Column="15" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgQ2_9" Source="img.png" Grid.Row="6" Grid.Column="17" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgQ2_10" Source="img.png" Grid.Row="6" Grid.Column="19" Grid.ColumnSpan="2"/>
+
+                <Image x:Name="imgA1Back" BackgroundColor="LightBlue" Grid.Row="8" Grid.Column="0" Grid.RowSpan="6" Grid.ColumnSpan="10"/>
+                <Button x:Name="lblAns1" BackgroundColor="LightBlue" Text="1" FontSize="60" Grid.Row="8" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="10" Clicked="lblAns_Clicked"/>
+                <Image x:Name="imgA1_1" Source="img.png" Grid.Row="12" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA1_2" Source="img.png" Grid.Row="12" Grid.Column="2" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA1_3" Source="img.png" Grid.Row="12" Grid.Column="4" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA1_4" Source="img.png" Grid.Row="12" Grid.Column="6" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA1_5" Source="img.png" Grid.Row="12" Grid.Column="8" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA1_6" Source="img.png" Grid.Row="13" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA1_7" Source="img.png" Grid.Row="13" Grid.Column="2" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA1_8" Source="img.png" Grid.Row="13" Grid.Column="4" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA1_9" Source="img.png" Grid.Row="13" Grid.Column="6" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA1_10" Source="img.png" Grid.Row="13" Grid.Column="8" Grid.ColumnSpan="2"/>
+
+                <Image x:Name="imgA2Back" BackgroundColor="LightPink" Grid.Row="8" Grid.Column="11" Grid.RowSpan="6" Grid.ColumnSpan="10"/>
+                <Button x:Name="lblAns2" BackgroundColor="LightPink" Text="2" FontSize="60" Grid.Row="8" Grid.RowSpan="4" Grid.Column="11" Grid.ColumnSpan="10" Clicked="lblAns_Clicked"/>
+                <Image x:Name="imgA2_1" Source="img.png" Grid.Row="12" Grid.Column="11" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA2_2" Source="img.png" Grid.Row="12" Grid.Column="13" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA2_3" Source="img.png" Grid.Row="12" Grid.Column="15" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA2_4" Source="img.png" Grid.Row="12" Grid.Column="17" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA2_5" Source="img.png" Grid.Row="12" Grid.Column="19" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA2_6" Source="img.png" Grid.Row="13" Grid.Column="11" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA2_7" Source="img.png" Grid.Row="13" Grid.Column="13" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA2_8" Source="img.png" Grid.Row="13" Grid.Column="15" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA2_9" Source="img.png" Grid.Row="13" Grid.Column="17" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA2_10" Source="img.png" Grid.Row="13" Grid.Column="19" Grid.ColumnSpan="2"/>
+
+                <Image x:Name="imgA3Back" BackgroundColor="LightYellow" Grid.Row="14" Grid.Column="0" Grid.RowSpan="6" Grid.ColumnSpan="10"/>
+                <Button x:Name="lblAns3" BackgroundColor="LightYellow" Text="3" FontSize="60" Grid.Row="14" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="10" Clicked="lblAns_Clicked"/>
+                <Image x:Name="imgA3_1" Source="img.png" Grid.Row="18" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA3_2" Source="img.png" Grid.Row="18" Grid.Column="2" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA3_3" Source="img.png" Grid.Row="18" Grid.Column="4" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA3_4" Source="img.png" Grid.Row="18" Grid.Column="6" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA3_5" Source="img.png" Grid.Row="18" Grid.Column="8" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA3_6" Source="img.png" Grid.Row="19" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA3_7" Source="img.png" Grid.Row="19" Grid.Column="2" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA3_8" Source="img.png" Grid.Row="19" Grid.Column="4" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA3_9" Source="img.png" Grid.Row="19" Grid.Column="6" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA3_10" Source="img.png" Grid.Row="19" Grid.Column="8" Grid.ColumnSpan="2"/>
+
+                <Image x:Name="imgA4Back" BackgroundColor="LightGreen" Grid.Row="14" Grid.Column="11" Grid.RowSpan="6" Grid.ColumnSpan="10"/>
+                <Button x:Name="lblAns4" BackgroundColor="LightGreen" Text="4" FontSize="60" Grid.Row="14" Grid.RowSpan="4" Grid.Column="11" Grid.ColumnSpan="10" Clicked="lblAns_Clicked"/>
+                <Image x:Name="imgA4_1" Source="img.png" Grid.Row="18" Grid.Column="11" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA4_2" Source="img.png" Grid.Row="18" Grid.Column="13" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA4_3" Source="img.png" Grid.Row="18" Grid.Column="15" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA4_4" Source="img.png" Grid.Row="18" Grid.Column="17" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA4_5" Source="img.png" Grid.Row="18" Grid.Column="19" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA4_6" Source="img.png" Grid.Row="19" Grid.Column="11" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA4_7" Source="img.png" Grid.Row="19" Grid.Column="13" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA4_8" Source="img.png" Grid.Row="19" Grid.Column="15" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA4_9" Source="img.png" Grid.Row="19" Grid.Column="17" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgA4_10" Source="img.png" Grid.Row="19" Grid.Column="19" Grid.ColumnSpan="2"/>
+
+                <controls:AdMobBanner Grid.Row="20" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="21"  WidthRequest="320" HeightRequest="50" />
+
+            </Grid>
+            <Image x:Name="imgResult" Source="batu.png" WidthRequest="400" HeightRequest="700" IsVisible="false"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:controls="clr-namespace:calc"
+             x:Class="calc.ResultPage"
+             NavigationPage.HasNavigationBar="False">
+    <Grid x:Name="grdMain" Margin="5" WidthRequest="600" BackgroundColor="White"
+              HorizontalOptions="Center" VerticalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.15*"/>
+            <RowDefinition Height="0.15*"/>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="0.2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image x:Name="imgTitle"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Source="result.png" Aspect="AspectFit"/>
+        <Image x:Name="imgScore1" Grid.Row="1" Grid.Column="0" Source="hosiBlack.png" Aspect="AspectFit"/>
+        <Image x:Name="imgScore2" Grid.Row="1" Grid.Column="1" Source="hosiBlack.png" Aspect="AspectFit"/>
+        <Image x:Name="imgScore3" Grid.Row="1" Grid.Column="2" Source="hosiBlack.png" Aspect="AspectFit"/>
+        <Image x:Name="imgScore4" Grid.Row="1" Grid.Column="3" Source="hosiBlack.png" Aspect="AspectFit"/>
+        <Image x:Name="imgScore5" Grid.Row="1" Grid.Column="4" Source="hosiBlack.png" Aspect="AspectFit"/>
+        <Image x:Name="imgResult" IsVisible="false" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" Source="maru.png" Aspect="AspectFit"/>
+        <ImageButton x:Name="btnRetry" Source="retry.png" IsVisible="false" BackgroundColor="LightPink" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Clicked="btnRetry_Clicked"/>
+        <ImageButton x:Name="btnBack" Source="back.png" IsVisible="false" BackgroundColor="LightBlue" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" Clicked="btnBack_Clicked"/>
+        <controls:AdMobBanner Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="5"  WidthRequest="320" HeightRequest="50" />
+    </Grid>
+</ContentPage>
